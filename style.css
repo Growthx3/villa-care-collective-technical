@@ -1,0 +1,102 @@
+/* Typography Standards */
+.font-sans {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Color Palette - Extracted from Website Screenshot */
+:root {
+    --bg-dark: #0b0c0c;
+    /* Deepest Black/Charcoal */
+    --bg-card: #141414;
+    /* Slightly lighter for cards */
+    --accent-gold: #dcc5a6;
+    /* Champagne Gold text */
+    --accent-teal: #2a5a5b;
+    /* The 'Engineered' Teal */
+    --text-light: #e5e5e5;
+    /* Off-white for body */
+    --text-dim: #9ca3af;
+    /* Dimmed text */
+    --functional-red: #b95d54;
+    /* The small 'Functional Excellence' accent */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+/* Utilities */
+.text-gold {
+    color: var(--accent-gold);
+}
+
+.text-teal {
+    color: var(--accent-teal);
+}
+
+.bg-teal {
+    background-color: var(--accent-teal);
+}
+
+.border-gold {
+    border-color: var(--accent-gold);
+}
+
+/* The 'Engineered' text effect */
+.text-engineered {
+    font-style: italic;
+    font-weight: 800;
+    color: var(--accent-teal);
+}
+
+/* Eyebrow Headers (e.g., "FUNCTIONAL EXCELLENCE") */
+.eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--functional-red);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--accent-gold);
+    color: var(--bg-dark);
+    border-radius: 9999px;
+    /* Pill shape */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 1rem 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--accent-teal);
+    color: var(--accent-teal);
+    border-radius: 9999px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-teal);
+    color: #fff;
+}
+
+/* Image Gradients */
+.image-overlay {
+    background: linear-gradient(to bottom, rgba(11, 12, 12, 0.2), rgba(11, 12, 12, 1));
+}
